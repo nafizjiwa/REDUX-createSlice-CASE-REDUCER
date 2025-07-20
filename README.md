@@ -28,7 +28,7 @@
      
         const App () => {
                 const sliceName = useSelector((state)=> state.todos)     //useSlector help retrieve the state needed
-                const dispatch = useDispatch();                          //use dispatch to access the reducer defined in theslicefile
+                const dispatch = useDispatch();                    //use dispatch to access the reducer defined in the slicefile
                 if(){
                   dispatch(caseReducer1)                                 //then use dispatch to dispatch the reducers action
                 }
