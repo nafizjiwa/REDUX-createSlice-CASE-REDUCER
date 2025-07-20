@@ -5,20 +5,20 @@
         --SliceFile.js--
         import { createSlice } from '@reduxjs/toolkit';
 
-    const sliceName = createSlice({
-        - Slice includes
-            name: 'SliceName', 
-            initialState: Slice's InitialState,
-            reducers: {                         //Define how to handle and process the action payloads
-              caseReducer1: (state, action) => {
-                    console.log(action.payload)
-                    },
-              caseReducer2: (state, action) => {}
-               } 
-     })
+        const sliceName = createSlice({
+             - Slice includes
+                 name: 'SliceName', 
+                 initialState: Slice's InitialState,
+                 reducers: {                         //Define how to handle and process the action payloads
+                   caseReducer1: (state, action) => {
+                        console.log(action.payload)
+                        },
+                  caseReducer2: (state, action) => {}
+                        },
+         })
 
-     expport const { caseReducer1, caseReducer2 } = todoSlice.action;
-     export default sliceName.reducer;
+         expport const { caseReducer1, caseReducer2 } = todoSlice.action;
+         export default sliceName.reducer;
 
 
   - To use the slice in the App Component use the useSelector();
