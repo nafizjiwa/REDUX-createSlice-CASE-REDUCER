@@ -1,15 +1,14 @@
 # REDUX-CREATE-CASE-REDUCER
 
-- Create a reducer using a slice
+### - Create a reducer using a slice
 
         --SliceFile.js--
         import { createSlice } from '@reduxjs/toolkit';    //In sliceFile import createSlice
 
-        const sliceName = createSlice({
-             - Slice includes
+        const sliceName = createSlice({                          - Slice includes
                  name: 'SliceName', 
                  initialState: Slice's InitialState,
-                 reducers: {                         //Define how to handle and process the action payloads
+                 reducers: {                         //Reducer defines how to handle and process the action payloads
                    caseReducer1: (state, action) => {
                         console.log(action.payload)
                         },
@@ -21,7 +20,7 @@
          export default sliceName.reducer;
 
 
-- To use the slice in the App Component use the useSelector();
+### - To use the slice in the App Component use the useSelector();
 
         import { useSelector, useDispatch } from 'react-redux';           //import useSelector and useDispatch
         import { caseReducer1, caseReducer2 } from './sliceFile';         //import action reducers from slice
