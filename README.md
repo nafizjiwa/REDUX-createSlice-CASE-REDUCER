@@ -2,8 +2,8 @@
 
 - Create a reducer using a slice
 
-    --SliceFile.js--
-    import { createSlice } from '@reduxjs/toolkit';
+        --SliceFile.js--
+        import { createSlice } from '@reduxjs/toolkit';
 
     const sliceName = createSlice({
         - Slice includes
