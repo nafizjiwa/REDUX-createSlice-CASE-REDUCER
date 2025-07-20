@@ -23,14 +23,14 @@
 
 - To use the slice in the App Component use the useSelector();
 
-        import { useSelector, useDispatch } from 'react-redux';      //import useSelector and useDispatch
-        import { caseReducer1, caseReducer2 } from './sliceFile';              //import action reducers from slice
+        import { useSelector, useDispatch } from 'react-redux';           //import useSelector and useDispatch
+        import { caseReducer1, caseReducer2 } from './sliceFile';         //import action reducers from slice
      
         const App () => {
-                const sliceName = useSelector((state)=> state.todos)      //useSlector help retrieve the state needed
-                const dispatch = useDispatch();                           //use dispatch to access the reducer defined in theslicefile
+                const sliceName = useSelector((state)=> state.todos)     //useSlector help retrieve the state needed
+                const dispatch = useDispatch();                          //use dispatch to access the reducer defined in theslicefile
                 if(){
-                  dispatch(caseReducer1)                                         //then use dispatch to dispatch the reducers action
+                  dispatch(caseReducer1)                                 //then use dispatch to dispatch the reducers action
                 }
         }
   
