@@ -16,8 +16,8 @@
                         },
          })
 
-         expport const { caseReducer1, caseReducer2 } = todoSlice.action;
-         export default sliceName.reducer;
+         expport const { caseReducer1, caseReducer2 } = todoSlice.action;  //export the case reducers
+         export default sliceName.reducer;                                 //export the sliceReducer
 
 
 ### - To use the slice and its reducers in the App Component use the useSelector() and useDispatch;
@@ -27,7 +27,7 @@
      
         const App () => {
                 const sliceName = useSelector((state)=> state.todos)     //useSelector help retrieve the state needed
-                const dispatch = useDispatch();                    //use dispatch to access the reducer defined in the slicefile
+                const dispatch = useDispatch();                    //use dispatch to access the reducer from the slicefile
                 if(){
                   dispatch(caseReducer1)                                 //then use dispatch to dispatch the reducers action
                 }
