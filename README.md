@@ -21,7 +21,7 @@
          export default sliceName.reducer;
 
 
-  - To use the slice in the App Component use the useSelector();
+- To use the slice in the App Component use the useSelector();
 
     import { useSelector, useDispatch } from 'react-redux';      //import useSelector and useDispatch
     import { caseReducer1, caseReducer2 } from './sliceFile';              //import action reducers from slice
