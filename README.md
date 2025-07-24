@@ -1,4 +1,4 @@
-# REDUX-CREATE-CASE-REDUCER
+# REDUX-createSlice-CASE-REDUCER
 
 ### - Create a reducer using a slice
 
@@ -12,7 +12,7 @@
                    caseReducer1: (state, action) => {
                         console.log(action.payload)
                         },
-                  caseReducer2: (state, action) => {}
+                   caseReducer2: (state, action) => {}
                         },
          })
 
