@@ -3,12 +3,13 @@
 ### - Create a reducer using a slice
 
         --SliceFile.js--
-        import { createSlice } from '@reduxjs/toolkit';    //In sliceFile import createSlice
+        import { createSlice } from '@reduxjs/toolkit';    //In the sliceFile import createSlice
 
         const sliceName = createSlice({                          - Slice includes
                  name: 'SliceName', 
                  initialState: Slice's InitialState,
-                 reducers: {                         //Reducer defines how to handle and process the action payloads
+                 reducers: {                        //Object of functions
+                         //Reducer defines how to handle and process the action payloads
                    caseReducer1: (state, action) => {
                         console.log(action.payload)
                         },
